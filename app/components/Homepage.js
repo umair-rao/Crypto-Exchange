@@ -8,7 +8,6 @@ import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
   const data = useSelector((state) => state.coinsDetail.coinsDetail);
-  // console.log(data, "umair");
 
   const dispatch = useDispatch();
 
@@ -17,7 +16,6 @@ const Homepage = () => {
   }, []);
 
   const rates = Object.entries(data.coinsDetail.rates);
-  // console.log(rates, "zain");
   return (
     <div className="bg-green grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 p-3">
       {rates.map((item, index) => (
