@@ -3,7 +3,8 @@ import axios from 'axios';
 import { combineReducers } from 'redux';
 
 const COINS_DETAIL = 'CoinsList/CoinsList/COINS_DETAIL';
-// const baseURL = 'http://api.coinlayer.com/list?access_key=e77228e502980f27c186cd82e5c1ec3e';
+const baseURL = 'http://api.coinlayer.com/live?access_key=e77228e502980f27c186cd82e5c1ec3e';
+
 
 export const fetchCoinsData = createAsyncThunk(
     COINS_DETAIL,

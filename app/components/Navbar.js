@@ -1,9 +1,9 @@
 
 const Navbar = () => {
   return (
-<nav class="bg-blue-500 p-4">
+<nav class="bg-teal-green p-4">
   <div class="flex justify-between items-center">
-    <div class="text-white font-semibold text-xl">Crypto Exchange Website</div>
+    <div class="text-white font-semibold text-xl">Crypto Live Market Price</div>
     <ul class="flex space-x-4">
       <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
       <li><a href="#" class="text-white hover:text-gray-200">About</a></li>
