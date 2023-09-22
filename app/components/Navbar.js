@@ -5,11 +5,11 @@ const Navbar = () => {
   <div class="flex justify-between items-center">
     <div class="text-white font-semibold text-xl">Crypto Live Market Price</div>
     <ul class="flex space-x-4">
-      <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
+      <li><a href="#" class="text-white hover:text-gray-200">Market Place</a></li>
       <li><a href="#" class="text-white hover:text-gray-200">About</a></li>
       <li><a href="#" class="text-white hover:text-gray-200">Services</a></li>
-      <li><a href="#" class="text-white hover:text-gray-200">Portfolio</a></li>
-      <li><a href="#" class="text-white hover:text-gray-200">Contact</a></li>
+      <li><a href="#" class="text-white hover:text-gray-200">Terms</a></li>
+      <li><a href="#" class="text-white hover:text-gray-200">Privacy</a></li>
     </ul>
   </div>
 </nav>
