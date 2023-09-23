@@ -36,8 +36,7 @@ const Page = () => {
        key={index}
      >
        <div className="px-6 py-4">
-         <h1>Exchanges Data</h1>
-         <div className="font-bold text-sm mb-2">Name: {item.name}</div>
+         <div className="font-bold text-sm mb-2">Exchange Name: {item.name}</div>
          <div className="text-gray-700 text-base">Rank: {item.rank}</div>
          <div className="text-gray-700 text-base">Trading Pairs: {item.tradingPairs}</div>
        </div>
