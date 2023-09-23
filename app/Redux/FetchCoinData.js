@@ -29,8 +29,8 @@ const fetchComisDataReducer = (state = initialState, action) => {
 };
 
 
-const rootReducer = combineReducers({
+const CoinsRootReducer = combineReducers({
   coinsDetail: fetchComisDataReducer,
 });
 
-export default rootReducer;
+export default CoinsRootReducer;

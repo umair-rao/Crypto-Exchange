@@ -3,13 +3,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCoinsData } from "../Redux/FetchCoinData";
 import { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
   const [loading, setLoading] = useState(true);
   const coinsData = useSelector((state) => state.coinsDetail.coinsDetail);
-  // console.log(coinsData, 'umair')
 
   const dispatch = useDispatch();
 
@@ -37,10 +34,12 @@ const Homepage = () => {
           key={index}
         >
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Coin: {item.name}</div>
-            <div className="text-gray-700 text-base">Rate: {item.priceUsd.slice(0,9)}</div>
+            <h1>Crypto coin Data</h1>
+            <div className="font-bold text-xl mb-2">Symbol: {item.symbol}</div>
+            <div className="text-gray-700 text-base">Name: {item.name}</div>
+            <div className="text-gray-700 text-base">Price: {item.priceUsd.slice(0,9)}</div>
+            <div className="text-gray-700 text-base">24 Hour Change: {item.changePercent24Hr.slice(0,9)} %</div>
           </div>
-          <div className="absolute bottom-0 right-0 p-2"><FontAwesomeIcon icon={faArrowRightFromBracket} beat size="lg" className="cursor-pointer"/></div>
         </div>
       ))}
     </div>

@@ -1,10 +1,13 @@
 
 import { configureStore } from '@reduxjs/toolkit'; 
-import rootReducer from './FetchCoinData';
+import CoinsRootReducer from './FetchCoinData';
+import marketRootReducer from './FetchMarketData';
+
 
 export const store = configureStore({
   reducer: {
-    coinsDetail: rootReducer,
+    coinsDetail: CoinsRootReducer,
+    marketDetail: marketRootReducer,
   },
 });
 

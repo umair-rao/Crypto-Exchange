@@ -15,7 +15,9 @@ module.exports = {
       colors: {
         'green': '#4CAF50',
         'ligth-yellow': '#FFFFCC',
-        'teal-green': '#00796B'
+        'teal-green': '#00796B',
+        'orange': '#FF9800',
+        'white': '#FFFFFF',
       }
     },
   },
