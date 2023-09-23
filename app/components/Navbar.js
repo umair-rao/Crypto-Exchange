@@ -7,9 +7,6 @@ const Navbar = () => {
     <ul class="flex space-x-4">
       <li><a href="/Exchanges" class="text-white hover:text-gray-200">Exchanges</a></li>
       <li><a href="/About" class="text-white hover:text-gray-200">About</a></li>
-      <li><a href="#" class="text-white hover:text-gray-200">Services</a></li>
-      <li><a href="#" class="text-white hover:text-gray-200">Terms</a></li>
-      <li><a href="#" class="text-white hover:text-gray-200">Privacy</a></li>
     </ul>
   </div>
 </nav>

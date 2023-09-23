@@ -1,10 +1,13 @@
+import Navbar from "../components/Navbar";
 
 
 const about = () => {
   return (
-    <div className="h-screen">
-        <h1>About</h1>
-      <p>
+    <>
+    {<Navbar/>}
+    <div className="h-screen container mx-auto p-8 bg-blue-100">
+        <h1 className="text-3xl font-semibold text-center text-gray-800">About</h1>
+      <p class="mt-4 text-lg text-center text-gray-600">
         Market enthusiasts can access real-time data like price charts and
         trading volumes in the "Market Data" area. Information on cryptocurrency
         wallets, exchanges, educational resources, and guides can be found in
@@ -15,6 +18,7 @@ const about = () => {
         enthusiasts and investors to engage with the crypto world.
       </p>
     </div>
+    </>
   );
 };
 
