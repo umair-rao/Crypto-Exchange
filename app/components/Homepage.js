@@ -2,20 +2,34 @@
 
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCoinsData } from "../Redux/FetchCoinData";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
+  const [loading, setLoading] = useState(true);
   const data = useSelector((state) => state.coinsDetail.coinsDetail);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchCoinsData());
-  }, []);
+    async function fetchData() {
+      try {
+        await dispatch(fetchCoinsData());
+        setLoading(false);
+      } catch (error) {
+      }
+    }
+
+    fetchData();
+  }, [dispatch]);
+
+  if (loading) {
+    return <p className="flex justify-center items-center h-screen">Loading...</p>;
+  }
 
   const rates = Object.entries(data.coinsDetail.rates);
+
   return (
     <div className="bg-green grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 p-3">
       {rates.map((item, index) => (
