@@ -34,11 +34,11 @@ const Navbar = () => {
             </p>
           </div>
         </div>
-        <input
+        {/* <input
           type="text"
           placeholder="Search..."
           className="px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:border-teal-500"
-        />
+        /> */}
         <ul className="flex space-x-4">
           <li>
             <a href="/Exchanges" className="text-white hover:text-gray-200">
